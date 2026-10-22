@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="CyberGuard membantu pelajar belajar keamanan digital secara interaktif.">
+
+  <title>CyberGuard | Digital Safety Platform</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-icon">⬡</span>
+      CyberGuard
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#phishing">Phishing Lab</a>
+      <a href="#password">Password Lab</a>
+      <a href="#challenge">Challenge</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow">DIGITAL SAFETY CENTER</p>
+
+      <h1>
+        Stay Safe.<br>
+        <span>Think Smart.</span>
+      </h1>
+
+      <p class="hero-description">
+        Learn to recognize digital threats, strengthen
+        your passwords, and build safer internet habits.
+      </p>
+
+      <a class="primary-button" href="#phishing">
+        Start Exploring →
+      </a>
+    </section>
+
+    <section class="section" id="dashboard">
+      <div class="section-heading">
+        <p class="eyebrow">YOUR LEARNING SPACE</p>
+        <h2>Security Dashboard</h2>
+        <p>Explore our interactive digital safety tools.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card" id="phishing">
+          <div class="feature-icon">⌕</div>
+          <h3>Phishing Detector</h3>
+          <p>
+            Learn to identify suspicious messages
+            and potential online scams.
+          </p>
+          <a href="#phishing-tool">Explore tool →</a>
+        </article>
+
+        <article class="feature-card" id="password">
+          <div class="feature-icon">⚿</div>
+          <h3>Password Lab</h3>
+          <p>
+            Understand password strength and
+            discover ways to improve it.
+          </p>
+          <a href="#password-tool">Explore tool →</a>
+        </article>
+
+        <article class="feature-card" id="challenge">
+          <div class="feature-icon">✧</div>
+          <h3>Cyber Challenge</h3>
+          <p>
+            Test your knowledge through
+            interactive security scenarios.
+          </p>
+          <a href="#challenge-tool">Start challenge →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section tool-section" id="phishing-tool">
+      <p class="eyebrow">TOOL 01</p>
+      <h2>Phishing Detector</h2>
+      <p>
+        Analyze an example message and learn to recognize
+        suspicious signs.
+      </p>
+
+      <label for="message-input">Example message</label>
+      <textarea
+        id="message-input"
+        placeholder="Paste a sample suspicious message here..."
+        rows="5"
+      ></textarea>
+
+      <button id="analyze-button" class="primary-button">
+        Analyze Message
+      </button>
+
+      <div id="phishing-result" class="result-panel"
+        aria-live="polite">
+        Your analysis will appear here.
+      </div>
+    </section>
+
+    <section class="section tool-section" id="password-tool">
+      <p class="eyebrow">TOOL 02</p>
+      <h2>Password Lab</h2>
+      <p>
+        Use a sample password to learn about password strength.
+        Never enter your real account password.
+      </p>
+
+      <label for="password-input">Sample password</label>
+      <input
+        id="password-input"
+        type="password"
+        placeholder="Enter a sample password"
+        autocomplete="off"
+      >
+
+      <div class="strength-track">
+        <div id="strength-bar" class="strength-bar"></div>
+      </div>
+
+      <p id="password-result" aria-live="polite">
+        Your password assessment will appear here.
+      </p>
+    </section>
+
+    <section class="section tool-section" id="challenge-tool">
+      <p class="eyebrow">TOOL 03</p>
+      <h2>Cyber Challenge</h2>
+      <p>
+        Test your ability to make safer decisions online.
+      </p>
+
+      <div id="quiz-container">
+        <p>The challenge will appear here.</p>
+      </div>
+
+      <button id="start-quiz" class="primary-button">
+        Start Challenge
+      </button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>CyberGuard © 2026</p>
+    <p>Learn. Detect. Protect.</p>
+    <p class="footer-note">
+      Educational project. Results are indicators, not
+      guarantees of digital security.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
